@@ -3,7 +3,7 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-  min-height: 100vh;      /* Usa min-height en lugar de height */
+  min-height: 100vh;      
   display: flex;
   justify-content: center; /* Centra horizontalmente */
   align-items: center;    /* Centra verticalmente */
@@ -26,8 +26,17 @@ li {
   align-items: center;     /* Alinea el texto y el botón verticalmente */
 }
 
+li > button {
+  margin-left: 5px;  /* Pequeño margen entre los botones */
+}
+
+.button-container {
+  display: flex;
+  gap: 8px;  /* Añadimos un espaciado fijo entre los botones */
+}
+
 button {
-  margin-left: 10px;       /* Espacio entre el texto y el botón */
+  margin-left: 5px;       /* Espacio entre el texto y el botón */
   padding: 5px 10px;
   font-size: 1rem;
 }
@@ -59,3 +68,18 @@ button {
 .delete-button:hover {
   background-color: #c82333; /* Rojo más oscuro al pasar el cursor */
 }
+
+.edit-button {
+  background-color: #ffc107; /* Color amarillo */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.edit-button:hover {
+  background-color: #e0a800; /* Amarillo más oscuro al pasar el cursor */
+}
+
+
